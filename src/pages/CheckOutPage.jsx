@@ -1,26 +1,28 @@
 import React from 'react'
 import './CheckOut.css'
 import './CheckoutHeader.css' 
-import logo from '../../Assets/Icons/logo.png'
-import mobilelogo from '../../Assets/Icons/mobile-logo.png'
-import checkoutlockicon from '../../Assets/Icons/checkout-lock-icon.png'
-import athleticcottonsocks from '../../Assets/products/athletic-cotton-socks-6-pairs.jpg'
-import basketball from '../../Assets/products/intermediate-composite-basketball.jpg'
+import { Link } from 'react-router'
+import logo from '../Assets/Icons/logo.png'
+import mobilelogo from '../Assets/Icons/mobile-logo.png'
+import checkoutlockicon from '../Assets/Icons/checkout-lock-icon.png'
+import athleticcottonsocks from '../Assets/products/athletic-cotton-socks-6-pairs.jpg'
+import basketball from '../Assets/products/intermediate-composite-basketball.jpg'
+
 const CheckOutPage = () => {
   return (
     <>
    <div className="checkout-header">
       <div className="header-content">
         <div className="checkout-header-left-section">
-          <a href="/">
+          <Link to="/">
             <img className="logo" src={logo} />
             <img className="mobile-logo" src={mobilelogo} />
-          </a>
+          </Link>
         </div>
 
         <div className="checkout-header-middle-section">
-          Checkout (<a className="return-to-home-link"
-            href="/">3 items</a>)
+          Checkout (<Link className="return-to-home-link"
+            to="/">3 items</Link>)
         </div>
 
         <div className="checkout-header-right-section">

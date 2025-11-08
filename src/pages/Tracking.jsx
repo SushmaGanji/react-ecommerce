@@ -1,16 +1,17 @@
 import React from 'react'
 import './tracking.css'
+import { Link } from 'react-router'
 const Tracking = () => {
   return (
    <>
     <div className="header">
       <div className="left-section">
-        <a href="/" className="header-link">
+        <Link to="/" className="header-link">
           <img className="logo"
             src="images/logo-white.png" />
           <img className="mobile-logo"
             src="images/mobile-logo-white.png" />
-        </a>
+        </Link>
       </div>
 
       <div className="middle-section">
@@ -22,24 +23,24 @@ const Tracking = () => {
       </div>
 
       <div className="right-section">
-        <a className="orders-link header-link" href="Order">
+        <Link className="orders-link header-link" to="Order">
 
           <span className="orders-text">Orders</span>
-        </a>
+        </Link>
 
-        <a className="cart-link header-link" href="checkout.html">
+        <Link className="cart-link header-link" to="checkout.html">
           <img className="cart-icon" src="images/icons/cart-icon.png" />
           <div className="cart-quantity">3</div>
           <div className="cart-text">Cart</div>
-        </a>
+        </Link>
       </div>
     </div>
 
     <div className="tracking-page">
       <div className="order-tracking">
-        <a className="back-to-orders-link link-primary" href="Order">
+        <Link className="back-to-orders-link link-primary" to="Order">
           View all orders
-        </a>
+        </Link>
 
         <div className="delivery-date">
           Arriving on Monday, June 13

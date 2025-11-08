@@ -1,43 +1,11 @@
 import React from 'react'
 import './Orders.css'
-import logowhite from '../../Assets/Icons/logo-white.png'
-import mobilelogowhite from '../../Assets/Icons/mobile-logo-white.png'
-import searchicon from '../../Assets/Icons/search-icon.png'
-import carticon from '../../Assets/Icons/cart-icon.png'
+import { Link } from 'react-router'
+import Header from '../components/Header'
 const Orders = () => {
   return (
     <>
-     <div className="header">
-      <div className="left-section">
-        <a href="/" className="header-link">
-          <img className="logo"
-            src={logowhite} />
-          <img className="mobile-logo"
-            src={mobilelogowhite}/>
-        </a>
-      </div>
-
-      <div className="middle-section">
-        <input className="search-bar" type="text" placeholder="Search" />
-
-        <button className="search-button">
-          <img className="search-icon" src={searchicon} />
-        </button>
-      </div>
-
-      <div className="right-section">
-        <a className="orders-link header-link" href="Order">
-
-          <span className="orders-text">Orders</span>
-        </a>
-
-        <a className="cart-link header-link" href="checkout.html">
-          <img className="cart-icon" src={carticon} />
-          <div className="cart-quantity">3</div>
-          <div className="cart-text">Cart</div>
-        </a>
-      </div>
-    </div>
+    <Header/>
 
     <div className="orders-page">
       <div className="page-title">Your Orders</div>
@@ -85,11 +53,11 @@ const Orders = () => {
             </div>
 
             <div className="product-actions">
-              <a href="tracking">
+              <Link to="tracking">
                 <button className="track-package-button button-secondary">
                   Track package
                 </button>
-              </a>
+              </Link>
             </div>
 
             <div className="product-image-container">
@@ -113,11 +81,11 @@ const Orders = () => {
             </div>
 
             <div className="product-actions">
-              <a href="tracking">
+              <Link to="tracking">
                 <button className="track-package-button button-secondary">
                   Track package
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -164,11 +132,11 @@ const Orders = () => {
             </div>
 
             <div className="product-actions">
-              <a href="tracking">
+              <Link to="tracking">
                 <button className="track-package-button button-secondary">
                   Track package
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
