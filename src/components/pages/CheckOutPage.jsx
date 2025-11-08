@@ -12,7 +12,7 @@ const CheckOutPage = () => {
    <div className="checkout-header">
       <div className="header-content">
         <div className="checkout-header-left-section">
-          <a href="index.html">
+          <a href="/">
             <img className="logo" src={logo} />
             <img className="mobile-logo" src={mobilelogo} />
           </a>
@@ -20,7 +20,7 @@ const CheckOutPage = () => {
 
         <div className="checkout-header-middle-section">
           Checkout (<a className="return-to-home-link"
-            href="index.html">3 items</a>)
+            href="/">3 items</a>)
         </div>
 
         <div className="checkout-header-right-section">

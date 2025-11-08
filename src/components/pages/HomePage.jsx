@@ -17,7 +17,7 @@ const HomePage = () => {
     <>
 <div className="header">
       <div className="left-section">
-        <a href="index.html" className="header-link">
+        <a href="/" className="header-link">
           <img className="logo"
             src={logowhite}/>
           <img className="mobile-logo"
@@ -34,7 +34,7 @@ const HomePage = () => {
       </div>
 
       <div className="right-section">
-        <a className="orders-link header-link" href="orders.html">
+        <a className="orders-link header-link" href="Order">
 
           <span className="orders-text">Orders</span>
         </a>
