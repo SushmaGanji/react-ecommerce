@@ -1,5 +1,5 @@
 import React from 'react'
-import './header.css'
+import './Header.css'
 import { Link } from 'react-router'
 import logowhite from '../Assets/Icons/logo-white.png'
 import logo from '../Assets/Icons/logo.png'
