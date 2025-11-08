@@ -1,7 +1,7 @@
 import React from 'react'
 import './Orders.css'
 import { Link } from 'react-router'
-import Header from '../components/Header'
+import Header from '../components/Header.jsx'
 const Orders = () => {
   return (
     <>
