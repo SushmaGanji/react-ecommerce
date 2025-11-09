@@ -1,78 +1,51 @@
 import React from 'react'
 import './tracking.css'
 import { Link } from 'react-router'
+import Header from '../components/Header'
 const Tracking = () => {
   return (
    <>
-    <div className="header">
-      <div className="left-section">
-        <Link to="/" className="header-link">
-          <img className="logo"
-            src="images/logo-white.png" />
-          <img className="mobile-logo"
-            src="images/mobile-logo-white.png" />
-        </Link>
-      </div>
+    <Header/>
 
-      <div className="middle-section">
-        <input className="search-bar" type="text" placeholder="Search" />
-
-        <button className="search-button">
-          <img className="search-icon" src="images/icons/search-icon.png" />
-        </button>
-      </div>
-
-      <div className="right-section">
-        <Link className="orders-link header-link" to="Order">
-
-          <span className="orders-text">Orders</span>
-        </Link>
-
-        <Link className="cart-link header-link" to="checkout.html">
-          <img className="cart-icon" src="images/icons/cart-icon.png" />
-          <div className="cart-quantity">3</div>
-          <div className="cart-text">Cart</div>
-        </Link>
-      </div>
-    </div>
-
-    <div className="tracking-page">
-      <div className="order-tracking">
-        <Link className="back-to-orders-link link-primary" to="Order">
+    <div class="tracking-page">
+      <div class="order-tracking">
+        <a class="back-to-orders-link link-primary" href="orders.html">
           View all orders
-        </Link>
+        </a>
 
-        <div className="delivery-date">
+        <div class="delivery-date">
           Arriving on Monday, June 13
         </div>
 
-        <div className="product-info">
+        <div class="product-info">
           Black and Gray Athletic Cotton Socks - 6 Pairs
         </div>
 
-        <div className="product-info">
+        <div class="product-info">
           Quantity: 1
         </div>
 
-        <img className="product-image" src="images/products/athletic-cotton-socks-6-pairs.jpg" />
+        <img class="product-image" src="images/products/athletic-cotton-socks-6-pairs.jpg" />
 
-        <div className="progress-labels-container">
-          <div className="progress-label">
+        <div class="progress-labels-container">
+          <div class="progress-label">
             Preparing
           </div>
-          <div className="progress-label current-status">
+          <div class="progress-label current-status">
             Shipped
           </div>
-          <div className="progress-label">
+          <div class="progress-label">
             Delivered
           </div>
         </div>
 
-        <div className="progress-bar-container">
-          <div className="progress-bar"></div>
+        <div class="progress-bar-container">
+          <div class="progress-bar"></div>
         </div>
       </div>
     </div>
+
+    
    </>
   )
 }

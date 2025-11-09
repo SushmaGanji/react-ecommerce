@@ -1,6 +1,7 @@
 import React from 'react'
 import './Header.css'
 import { Link } from 'react-router'
+import { NavLink } from 'react-router'
 import logowhite from '../Assets/Icons/logo-white.png'
 import logo from '../Assets/Icons/logo.png'
 import mobilelogo from '../Assets/Icons/mobile-logo-white.png'
@@ -10,12 +11,12 @@ const Header = () => {
   return (
    <div className="header">
          <div className="left-section">
-           <Link to="/" className="header-link">
+           <NavLink to="/" className="header-link">
              <img className="logo"
                src={logowhite}/>
              <img className="mobile-logo"
                src={mobilelogo} />
-           </Link>
+           </NavLink>
          </div>
    
          <div className="middle-section">
@@ -27,16 +28,16 @@ const Header = () => {
          </div>
    
          <div className="right-section">
-           <Link className="orders-link header-link" to="Order">
+           <NavLink className="orders-link header-link" to="Order">
    
              <span className="orders-text">Orders</span>
-           </Link>
+           </NavLink>
    
-           <Link className="cart-link header-link" to="checkout.html">
+           <NavLink className="cart-link header-link" to="checkout.html">
              <img className="cart-icon" src={cartIcon} />
              <div className="cart-quantity">3</div>
              <div className="cart-text">Cart</div>
-           </Link>
+           </NavLink>
          </div>
        </div>
   )

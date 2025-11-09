@@ -3,6 +3,7 @@ import HomePage from './pages/HomePage.jsx'
 import CheckOutPage from './pages/checkout/CheckOutPage.jsx'
 import Orders from './pages/Orders.jsx';
 import Tracking from './pages/Tracking.jsx';
+import ErrorPage from './pages/ErrorPage.jsx';
 import {Routes,Route} from 'react-router'
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="checkout" element={ <CheckOutPage/>}></Route>
         <Route path='Orders' element={<Orders/>}></Route>
         <Route path="tracking" element={<Tracking/>}></Route>
+        <Route path='*' element={<ErrorPage/>}></Route>
       </Routes>
     </div>
   );
