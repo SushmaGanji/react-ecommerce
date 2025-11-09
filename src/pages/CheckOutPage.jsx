@@ -1,15 +1,29 @@
 import React from 'react'
-import './CheckOut.css'
-import './CheckoutHeader.css' 
-import CheckoutHeader from './CheckoutHeader.jsx'
-import athleticcottonsocks from '../../Assets/products/athletic-cotton-socks-6-pairs.jpg'
-import basketball from '../../Assets/products/intermediate-composite-basketball.jpg'
-
+import './CheckOutPage.css'
+import './CheckoutHeader.css'
 const CheckOutPage = () => {
   return (
     <>
-   
-  <CheckoutHeader/>
+     <div className="checkout-header">
+      <div className="header-content">
+        <div className="checkout-header-left-section">
+          <a href="/">
+            <img className="logo" src="images/logo.png" />
+            <img className="mobile-logo" src="images/mobile-logo.png" />
+          </a>
+        </div>
+
+        <div className="checkout-header-middle-section">
+          Checkout (<a className="return-to-home-link"
+            href="/">3 items</a>)
+        </div>
+
+        <div className="checkout-header-right-section">
+          <img src="images/icons/checkout-lock-icon.png" />
+        </div>
+      </div>
+    </div>
+
     <div className="checkout-page">
       <div className="page-title">Review your order</div>
 
@@ -22,7 +36,7 @@ const CheckOutPage = () => {
 
             <div className="cart-item-details-grid">
               <img className="product-image"
-                src={athleticcottonsocks}/>
+                src="images/products/athletic-cotton-socks-6-pairs.jpg" />
 
               <div className="cart-item-details">
                 <div className="product-name">
@@ -98,7 +112,7 @@ const CheckOutPage = () => {
 
             <div className="cart-item-details-grid">
               <img className="product-image"
-                src={basketball} />
+                src="images/products/intermediate-composite-basketball.jpg" />
 
               <div className="cart-item-details">
                 <div className="product-name">

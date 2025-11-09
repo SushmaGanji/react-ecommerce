@@ -1,11 +1,10 @@
 import React from 'react'
-import './Orders.css'
-import { Link } from 'react-router'
-import Header from '../components/Header.jsx'
-const Orders = () => {
+import './OrdersPage.css'
+import Header from '../components/Header'
+const OrdersPage = () => {
   return (
     <>
-    <Header/>
+   <Header/>
 
     <div className="orders-page">
       <div className="page-title">Your Orders</div>
@@ -53,11 +52,11 @@ const Orders = () => {
             </div>
 
             <div className="product-actions">
-              <Link to="tracking">
+              <a href="/tracking">
                 <button className="track-package-button button-secondary">
                   Track package
                 </button>
-              </Link>
+              </a>
             </div>
 
             <div className="product-image-container">
@@ -81,11 +80,11 @@ const Orders = () => {
             </div>
 
             <div className="product-actions">
-              <Link to="tracking">
+              <a href="/tracking">
                 <button className="track-package-button button-secondary">
                   Track package
                 </button>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -132,11 +131,11 @@ const Orders = () => {
             </div>
 
             <div className="product-actions">
-              <Link to="tracking">
+              <a href="/tracking">
                 <button className="track-package-button button-secondary">
                   Track package
                 </button>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -146,4 +145,4 @@ const Orders = () => {
   )
 }
 
-export default Orders
+export default OrdersPage

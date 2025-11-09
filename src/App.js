@@ -1,22 +1,24 @@
 import './App.css';
-import HomePage from './pages/HomePage.jsx'
-import CheckOutPage from './pages/checkout/CheckOutPage.jsx'
-import Orders from './pages/Orders.jsx';
-import Tracking from './pages/Tracking.jsx';
-import ErrorPage from './pages/ErrorPage.jsx';
-import {Routes,Route} from 'react-router'
+
+import HomePage from './pages/HomePage.jsx';
+import OrdersPage from './pages/OrdersPage.jsx';
+import CheckOutPage from './pages/CheckOutPage.jsx';
+import TrackingPage from './pages/TrackingPage.jsx';
+
+import { Routes, Route } from 'react-router-dom';
+
 function App() {
   return (
-    <div  className='App'>
+    <div className='App'>
       <Routes>
-        <Route path="/" element={ <HomePage/>}></Route>
-        <Route path="checkout" element={ <CheckOutPage/>}></Route>
-        <Route path='Orders' element={<Orders/>}></Route>
-        <Route path="tracking" element={<Tracking/>}></Route>
-        <Route path='*' element={<ErrorPage/>}></Route>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/checkout" element={<CheckOutPage />} />
+          <Route path="/orders" element={<OrdersPage />} />
+        <Route path="/tracking" element={<TrackingPage />} />
       </Routes>
     </div>
   );
 }
 
-export default App;
+export default App
+
