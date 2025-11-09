@@ -1,8 +1,14 @@
 import React from 'react'
 import './HomePage.css'
+import axios from 'axios'
 import Header from '../components/Header'
 import {products} from '../Data/product.js'
 const HomePage = () => {
+  axios.get("http://localhost:3000/api/products")
+  .then((response)=>
+  {
+    return response.data
+  })
   return (
     <>
     <Header/>
