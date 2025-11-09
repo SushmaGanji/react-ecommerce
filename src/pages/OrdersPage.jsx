@@ -5,8 +5,9 @@ const OrdersPage = () => {
   return (
     <>
    <Header/>
+    <link rel="icon" to="%PUBLIC_URL%/favicon.ico" />
 
-    <div className="orders-page">
+    h<div className="orders-page">
       <div className="page-title">Your Orders</div>
 
       <div className="orders-grid">

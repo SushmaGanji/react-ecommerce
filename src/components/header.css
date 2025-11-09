@@ -110,12 +110,17 @@
   align-items: center;
   padding-left: 13px;
   padding-right: 13px;
+ 
+}
+.orders-link.active{
+ text-decoration: underline;
 }
 
 .header .orders-text {
   display: block;
   font-size: 15px;
   font-weight: 700;
+  
 }
 
 .header .cart-link {
