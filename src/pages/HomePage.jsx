@@ -3,22 +3,17 @@ import './HomePage.css'
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 import Header from '../components/Header'
-import {products} from '../Data/product.js'
-const HomePage = () => {
+import money from '../utils/money'
+const HomePage = ({cart}) => {
   const[products, setProducts]=useState([]);
-  const[cart,setCart]=useState([])
+ 
   useEffect(()=>{
-    axios.get("http://localhost:3000/api/products")
+    axios.get("/api/products")
   .then((response)=>
   {
     setProducts(response.data)
   })
-
-  axios.get("https://localhost:3000/api/cart-items")
-  .then((response)=>{
-    setCart(response.data)
-  })
-  },[])
+},[])
   return (
     <>
     <Header cart={cart}/>
@@ -46,7 +41,7 @@ const HomePage = () => {
           </div>
 
           <div className="product-price">
-            ${(product.priceCents/100).toFixed(2)}
+            {money(product.priceCents)}
           </div>
 
           <div className="product-quantity-container">
